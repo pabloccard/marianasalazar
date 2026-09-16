@@ -1,0 +1,33 @@
+.sectionWrapper {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  display: block;
+}
+
+.sectionImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.hotspot {
+  position: absolute;
+  display: block;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 8px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hotspot:hover {
+  opacity: 0.9;
+  transform: scale(1.01);
+}
+
+.hotspot:active {
+  transform: scale(0.98);
+}
