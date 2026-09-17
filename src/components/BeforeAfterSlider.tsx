@@ -129,18 +129,20 @@ export default function BeforeAfterSlider({
         loading="lazy"
       />
 
-      {/* Divider line + handle */}
+      {/* Divider line and floating arrows */}
       <div
         className={styles.dividerLine}
         style={{ left: `${sliderPosition}%` }}
       >
-        <div className={styles.handle}>
-          <div className={styles.handleArrows}>
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M9 16l-4-4 4-4" />
-              <path d="M15 16l4-4-4-4" />
-            </svg>
-          </div>
+        <div className={styles.handleArrows}>
+          {/* Seta Esquerda */}
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M15 18l-6-6 6-6" />
+          </svg>
+          {/* Seta Direita */}
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 18l6-6-6-6" />
+          </svg>
         </div>
       </div>
     </div>
