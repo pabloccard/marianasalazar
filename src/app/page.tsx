@@ -136,6 +136,16 @@ export default function Home() {
             />
           </div>
         </SectionImage>
+
+        {/* BOTÃO DE CHECKOUT FINAL */}
+        <div className={styles.ctaContainer}>
+          <a
+            href="https://pay.hotmart.com/H104820730Y?checkoutMode=10"
+            className={styles.ctaButton}
+          >
+            QUERO GARANTIR MEUS PRESETS
+          </a>
+        </div>
       </div>
     </main>
   );
