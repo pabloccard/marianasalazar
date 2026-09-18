@@ -24,39 +24,4 @@
     max-width: var(--container-max-width, 540px);
     margin: 0 auto;
   }
-}
-.ctaContainer {
-  display: flex;
-  justify-content: center;
-  padding: 40px 20px 80px 20px;
-  background-color: #000000;
-}
 
-.ctaButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #22c55e; /* Verde conversão */
-  color: #ffffff;
-  font-weight: 800;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-  padding: 20px 40px;
-  border-radius: 8px;
-  text-decoration: none;
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 8px 24px rgba(34, 197, 94, 0.4);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.ctaButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(34, 197, 94, 0.5);
-}
-
-.ctaButton:active {
-  transform: translateY(2px);
-  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
-}

@@ -1,8 +1,10 @@
+import sys
 import cv2
 import numpy as np
 
 # Carregar a imagem
-image = cv2.imread('public/sections/SESSAO03.webp')
+image_path = sys.argv[1] if len(sys.argv) > 1 else 'public/sections/SESSAO03.webp'
+image = cv2.imread(image_path)
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 # Usar Canny Edge Detection

@@ -31,6 +31,10 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        {/* Preconnect para acelerar a abertura do Checkout da Hotmart */}
+        <link rel="preconnect" href="https://pay.hotmart.com" />
+        <link rel="dns-prefetch" href="https://pay.hotmart.com" />
+
         {/* Google Tag Manager / Script de Trackeamento Customizado */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`

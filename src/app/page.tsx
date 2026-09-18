@@ -36,16 +36,16 @@ export default function Home() {
           src="/sections/SESSAO02.webp"
           alt="Presets Exclusivos - Detalhes da Oferta"
           width={1400}
-          height={5209}
+          height={6579}
           priority={false}
         >
-          {/* PRIMEIRO SLIDER ANTES/DEPOIS (Retângulo Superior) */}
+          {/* SLIDER 01 */}
           <div style={{
             position: 'absolute',
-            top: '24.4961%',
+            top: '19.3950%',
             left: '12.9286%',
-            width: '74.1429%',
-            height: '24.8608%',
+            width: '74.2143%',
+            height: '19.6838%',
             zIndex: 10
           }}>
             <BeforeAfterSlider
@@ -56,18 +56,35 @@ export default function Home() {
             />
           </div>
 
-          {/* SEGUNDO SLIDER ANTES/DEPOIS (Retângulo Inferior) */}
+          {/* SLIDER 02 */}
           <div style={{
             position: 'absolute',
-            top: '70.4358%',
+            top: '55.5404%',
             left: '12.9286%',
             width: '74.1429%',
-            height: '24.8608%',
+            height: '19.6838%',
             zIndex: 10
           }}>
             <BeforeAfterSlider
               beforeImage="/02ANTES.webp"
               afterImage="/02DEPOIS.webp"
+              beforeLabel="Antes"
+              afterLabel="Depois"
+            />
+          </div>
+
+          {/* SLIDER 03 */}
+          <div style={{
+            position: 'absolute',
+            top: '76.5922%',
+            left: '12.9286%',
+            width: '74.1429%',
+            height: '19.6838%',
+            zIndex: 10
+          }}>
+            <BeforeAfterSlider
+              beforeImage="/03ANTES.webp"
+              afterImage="/03DEPOIS.webp"
               beforeLabel="Antes"
               afterLabel="Depois"
             />
@@ -82,33 +99,16 @@ export default function Home() {
           src="/sections/SESSAO03.webp"
           alt="Presets Exclusivos - Mais Detalhes"
           width={1400}
-          height={5659}
+          height={7453}
           priority={false}
         >
-          {/* SLIDER 03 (Esquerda) */}
+          {/* SLIDER 04 */}
           <div style={{
             position: 'absolute',
-            top: '21.0108%',
+            top: '15.9533%',
             left: '12.9286%',
-            width: '35.8571%',
-            height: '15.6388%',
-            zIndex: 10
-          }}>
-            <BeforeAfterSlider
-              beforeImage="/03ANTES.webp"
-              afterImage="/03DEPOIS.webp"
-              beforeLabel="Antes"
-              afterLabel="Depois"
-            />
-          </div>
-
-          {/* SLIDER 04 (Direita) */}
-          <div style={{
-            position: 'absolute',
-            top: '21.0108%',
-            left: '51.3571%',
-            width: '35.8571%',
-            height: '15.6388%',
+            width: '74.1429%',
+            height: '17.3756%',
             zIndex: 10
           }}>
             <BeforeAfterSlider
@@ -119,13 +119,13 @@ export default function Home() {
             />
           </div>
 
-          {/* SLIDER 05 (Abaixo) */}
+          {/* SLIDER 05 */}
           <div style={{
             position: 'absolute',
-            top: '72.7867%',
+            top: '60.7541%',
             left: '12.9286%',
             width: '74.1429%',
-            height: '22.8662%',
+            height: '17.3756%',
             zIndex: 10
           }}>
             <BeforeAfterSlider
@@ -135,17 +135,66 @@ export default function Home() {
               afterLabel="Depois"
             />
           </div>
+
+          {/* SLIDER 06 */}
+          <div style={{
+            position: 'absolute',
+            top: '79.3372%',
+            left: '12.9286%',
+            width: '74.1429%',
+            height: '17.3756%',
+            zIndex: 10
+          }}>
+            <BeforeAfterSlider
+              beforeImage="/06ANTES.webp"
+              afterImage="/06DEPOIS.webp"
+              beforeLabel="Antes"
+              afterLabel="Depois"
+            />
+          </div>
         </SectionImage>
 
-        {/* BOTÃO DE CHECKOUT FINAL */}
-        <div className={styles.ctaContainer}>
-          <a
-            href="https://pay.hotmart.com/H104820730Y?checkoutMode=10"
-            className={styles.ctaButton}
-          >
-            QUERO GARANTIR MEUS PRESETS
-          </a>
-        </div>
+        {/* SEÇÃO 04 */}
+        <SectionImage
+          id="sessao-04"
+          src="/sections/SESSAO04.webp"
+          alt="Presets Exclusivos - Seção 04"
+          width={1400}
+          height={5504}
+          priority={false}
+          hotspots={[
+            {
+              id: "cta-sessao-04",
+              top: "90.1526%",
+              left: "20.6429%",
+              width: "58.7143%",
+              height: "2.8161%",
+              href: "https://pay.hotmart.com/I107651584Q?checkoutMode=10&offDiscount=ESSENTIALS50",
+              ariaLabel: "Garantir Meus Presets Agora",
+            }
+          ]}
+        />
+
+        {/* SEÇÃO 05 */}
+        <SectionImage
+          id="sessao-05"
+          src="/sections/SESSAO05.webp"
+          alt="Presets Exclusivos - Seção 05"
+          width={1400}
+          height={5974}
+          priority={false}
+          hotspots={[
+            {
+              id: "cta-sessao-05",
+              top: "74.3723%",
+              left: "13.5000%",
+              width: "58.7857%",
+              height: "2.5946%",
+              href: "https://pay.hotmart.com/I107651584Q?checkoutMode=10&offDiscount=ESSENTIALS50",
+              ariaLabel: "Garantir Meus Presets Agora",
+            }
+          ]}
+        />
       </div>
     </main>
   );
