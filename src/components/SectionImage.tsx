@@ -42,6 +42,7 @@ export default function SectionImage({
         width={width}
         height={height}
         priority={priority}
+        fetchPriority={priority ? "high" : "auto"}
         sizes="(max-width: 640px) 100vw, 540px"
         className={styles.sectionImage}
       />
