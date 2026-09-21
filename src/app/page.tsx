@@ -53,6 +53,7 @@ export default function Home() {
               afterImage="/01DEPOIS.webp"
               beforeLabel="Antes"
               afterLabel="Depois"
+              presetName="Essentials 01"
             />
           </div>
 
@@ -70,6 +71,7 @@ export default function Home() {
               afterImage="/02DEPOIS.webp"
               beforeLabel="Antes"
               afterLabel="Depois"
+              presetName="Essentials 07"
             />
           </div>
 
@@ -87,6 +89,7 @@ export default function Home() {
               afterImage="/03DEPOIS.webp"
               beforeLabel="Antes"
               afterLabel="Depois"
+              presetName="Essentials 04"
             />
           </div>
         </SectionImage>
@@ -116,6 +119,7 @@ export default function Home() {
               afterImage="/04DEPOIS.webp"
               beforeLabel="Antes"
               afterLabel="Depois"
+              presetName="Essentials 05"
             />
           </div>
 
@@ -133,6 +137,7 @@ export default function Home() {
               afterImage="/05DEPOIS.webp"
               beforeLabel="Antes"
               afterLabel="Depois"
+              presetName="Essentials 14"
             />
           </div>
 
@@ -150,6 +155,7 @@ export default function Home() {
               afterImage="/06DEPOIS.webp"
               beforeLabel="Antes"
               afterLabel="Depois"
+              presetName="Essentials 02"
             />
           </div>
         </SectionImage>

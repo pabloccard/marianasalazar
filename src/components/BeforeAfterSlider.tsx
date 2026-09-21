@@ -9,6 +9,7 @@ export interface BeforeAfterSliderProps {
   beforeLabel?: string;
   afterLabel?: string;
   initialPosition?: number; // 0 to 100
+  presetName?: string; // Novo: Nome do preset para a tag
 }
 
 export default function BeforeAfterSlider({
@@ -17,6 +18,7 @@ export default function BeforeAfterSlider({
   beforeLabel = "Antes",
   afterLabel = "Depois",
   initialPosition = 50,
+  presetName,
 }: BeforeAfterSliderProps) {
   const [sliderPosition, setSliderPosition] = useState<number>(initialPosition);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -47,10 +49,6 @@ export default function BeforeAfterSlider({
   };
 
   // --- TOUCH (Mobile) ---
-  // Registramos os listeners diretamente no DOM via useEffect
-  // porque o React registra onTouchMove como "passive: true" por padrão,
-  // o que impede o preventDefault() de funcionar.
-
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
@@ -145,6 +143,13 @@ export default function BeforeAfterSlider({
           </svg>
         </div>
       </div>
+
+      {/* Preset Tag (Optional) */}
+      {presetName && (
+        <div className={styles.presetTag}>
+          {presetName}
+        </div>
+      )}
     </div>
   );
 }
