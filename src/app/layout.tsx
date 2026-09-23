@@ -2,15 +2,15 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Presets Exclusivos | Transforme suas Fotos com 1 Clique",
-  description: "Eleve a qualidade visual do seu feed e dos seus ensaios com a coleção definitiva de presets profissionais.",
+  title: "Essentials Collection | Presets para Lightroom",
+  description: "Transforma tus fotos en recuerdos aún más especiales con nuestra colección de presets profesionales para Lightroom. Consigue fotos increíbles en pocos clics, incluso si fueron tomadas con el celular y no tienes experiencia en edición.",
   keywords: ["presets", "lightroom", "fotografia", "edição de fotos", "instagram presets"],
   authors: [{ name: "Presets Creator" }],
   openGraph: {
-    title: "Presets Exclusivos | Transforme suas Fotos com 1 Clique",
-    description: "Eleve o nível das suas fotos instantaneamente com os melhores presets do mercado.",
+    title: "Essentials Collection | Presets para Lightroom",
+    description: "Transforma tus fotos en recuerdos aún más especiales con nuestra colección de presets profesionales para Lightroom. Consigue fotos increíbles en pocos clics, incluso si fueron tomadas con el celular y no tienes experiencia en edición.",
     type: "website",
-    locale: "pt_BR",
+    locale: "es_ES",
   },
 };
 
